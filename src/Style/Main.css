@@ -1,0 +1,25 @@
+.main {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    height: 100vh;
+    overflow: hidden;
+    place-self: center;
+    align-content: center;
+    background-image: linear-gradient(to top, #080128 0%, #25213d 51%, #080128 100%);
+}
+
+.search {
+    padding: 1.5rem 0rem;
+}
+
+@media screen and (max-width:600px) {
+    .main {
+        display: grid;
+        grid-template-rows: 1fr 8fr;
+        height: 100vh;
+    }
+
+    .search {
+        padding: 2rem 0rem;
+    }
+}

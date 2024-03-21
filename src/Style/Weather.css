@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Ojuju:wght@200..800&family=PT+Mono&display=swap');
+
+.weather-part {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cloud-temp {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.sub-section {
+    height: 100%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.one-img {
+    width: 18rem;
+}
+
+.temp {
+    font-size: 6.5rem;
+    font-family: "PT Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+
+.curr {
+    border: 1px solid #fff;
+    width: 10rem;
+    height: 15rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.icons {
+    color: rgb(5, 184, 219);
+    font-size: 5rem;
+}
+
+.curr-text {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: "Ojuju", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.name {
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: "Almendra", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media screen and (max-width: 600px) {
+    .weather-part {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cloud-temp {
+        width: 100vw;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .one-img {
+        width: 10rem;
+    }
+
+    .temp {
+        font-size: 3rem;
+        font-family: "PT Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+        color: #fff;
+    }
+
+    .sub-section {
+        width: 100vw;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .curr {
+        border: 1px solid #fff;
+        width: 6.3rem;
+        height: 10rem;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        place-items: center;
+        padding: 0.5rem;
+        border-radius: 2rem;
+    }
+
+    .curr-text {
+        font-size: 1.2rem;
+        color: #fff;
+        font-family: "Ojuju", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .name {
+        font-size: 1.2rem;
+        color: #fff;
+        font-family: "Almendra", serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+}

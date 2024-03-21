@@ -1,0 +1,17 @@
+.information-section {
+    display: grid;
+    grid-template-rows: 0.3fr 3.3fr 2.4fr;
+    height: 100%;
+    overflow: hidden;
+    width: 100vw;
+}
+
+@media screen and (max-width: 600px) {
+    .information-section {
+        display: grid;
+        grid-template-rows: 0.5fr 4.5fr 3fr;
+        height: 100%;
+        overflow: hidden;
+        width: 100vw;
+    }
+}
